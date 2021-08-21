@@ -44,6 +44,7 @@ function scripts() {
   return src([
       'node_modules/slick-carousel/slick/slick.js',
       'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+      'node_modules/mixitup/dist/mixitup.js',
       'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -81,4 +82,4 @@ exports.scripts = scripts;
 exports.cleanDist = cleanDist;
 
 exports.build = series(cleanDist, build);
-exports.default = parallel(scripts, browsersync, watching);
+exports.default = parallel(scripts, styles, browsersync, watching);

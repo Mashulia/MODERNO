@@ -18,9 +18,13 @@
     "gulp-sass": "^5.0.0",
     "gulp-uglify-es": "^3.0.0",
     "magnific-popup": "^1.1.0",
+    "mixitup": "^3.3.1",
     "normalize.css": "^8.0.1",
+    "rateyo": "^3.0.0-alpha.2",
     "sass": "^1.38.0",
     "slick-carousel": "^1.8.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@rateyo/jquery": "^3.0.0-alpha.2"
+  }
 }
