@@ -499,3 +499,192 @@
 }
 
 // end tutorial
+// start footer
+.footer {
+  background-color: $bg;
+
+  &__top {
+    padding: 110px 0 100px;
+    border-bottom: 1px solid #424d53;
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__col {
+    max-width: 270px;
+
+    &--menu {
+      max-width: 220px;
+    }
+
+    &-title {
+      position: relative;
+      font-family: 'Raleway', sans-serif;
+      font-size: 22px;
+      color: #fff;
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 2px;
+        height: 3px;
+        width: 50px;
+        background-color: $green;
+      }
+    }
+
+    &-text {
+      margin-bottom: 30px;
+      color: #b7c3c8;
+    }
+
+    &-address {
+      font-style: normal;
+    }
+
+    &-info {
+      position: relative;
+      padding-left: 30px;
+      margin-top: 18px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #fff;
+
+      &::before {
+        content: "\f041";
+        position: absolute;
+        left: 0;
+        font-family: 'icomoon';
+        font-size: 18px;
+        color: $green;
+      }
+    }
+
+    &-tel {
+      &::before {
+        content: "\f095";
+      }
+    }
+
+    &-link {
+      position: relative;
+      display: block;
+      padding-left: 22px;
+      margin-bottom: 14px;
+      color: #b7c3c8;
+
+      &::before {
+        content: "\f105";
+        position: absolute;
+        left: 0;
+        font-family: 'icomoon';
+        font-size: 18px;
+        color: $green;
+      }
+    }
+  }
+
+  &__social-list {
+    margin-bottom: 33px;
+
+    & li {
+      display: inline-block;
+    }
+
+    & a {
+      width: 28px;
+      height: 28px;
+      background-image: url("../img/css_sprites.png");
+
+      +a {
+        margin-left: 7px;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 25px 0;
+    text-align: center;
+
+    &-copy {
+      font-size: 15px;
+      line-height: 36px;
+      color: #919699;
+    }
+  }
+
+  &__form {
+    position: relative;
+
+    &-title {
+      margin-bottom: 15px;
+      font-size: 20px;
+      line-height: 36px;
+      color: #fff;
+    }
+
+    input {
+      display: block;
+      padding-left: 13px;
+      padding-right: 50px;
+      max-width: 100%;
+      height: 40px;
+      border: none;
+      font-size: 14px;
+      color: #fff;
+      background-color: #2f3c43;
+      box-shadow: 0 -1px 1px #000;
+
+      &::placeholder {
+        color: #697378;
+      }
+    }
+
+    button {
+      position: absolute;
+      bottom: 1px;
+      right: 0;
+      padding: 0;
+      height: 41px;
+      width: 44px;
+      background-color: $green;
+      border: none;
+      cursor: pointer;
+
+      &::before {
+        content: "\f124";
+        position: absolute;
+        top: 10px;
+        left: 14px;
+        font-family: 'icomoon';
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+
+  }
+}
+
+.link-twitter {
+  background-position: -28px -28px;
+}
+
+.link-youtube {
+  background-position: -56px 0;
+}
+
+.link-pinterest {
+  background-position: 0 -28px;
+}
+
+.link-linkedin {
+  background-position: -28px 0;
+}
+
+// end footer
