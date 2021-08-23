@@ -1,0 +1,50 @@
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+.inner-page {
+  background-color: $grey;
+}
+
+// start breadcrumbs
+.breadcrumbs {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $grey;
+}
+
+.breadcrumbs__list {
+  display: flex;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  font-size: 15px;
+  color: $color-text-lighter;
+
+  &+.breadcrumbs__item {
+    padding-left: 12px;
+    margin-left: 8px;
+  }
+
+  &+.breadcrumbs__item::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6px;
+    height: 1px;
+    transform: translateY(-50%);
+    background-color: $green;
+  }
+
+  &:last-of-type::before {
+    display: none;
+  }
+
+  span {
+    color: $bg;
+  }
+}
+
+// end breadcrumbs

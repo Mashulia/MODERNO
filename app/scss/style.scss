@@ -2,6 +2,8 @@
 @import 'global';
 @import 'fonts';
 
+@import 'new-items';
+
 
 // start header
 
@@ -253,6 +255,7 @@
   background-color: #fff;
   border: 1px solid #ccc;
   transition: all 0.3s linear;
+  z-index: 10;
 
   a {
     margin-bottom: 15px;
@@ -291,6 +294,7 @@
   background-color: #fff;
   border: 1px solid #ccc;
   transition: all 0.3s linear;
+  z-index: 10;
 }
 
 .circle__item {
@@ -362,6 +366,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  &--page {
+    min-height: 230px;
+  }
 }
 
 .search__inner {
@@ -369,6 +377,11 @@
   padding-bottom: 100px;
   color: #fff;
   text-align: center;
+
+  &--page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   &-title {
     margin-bottom: 10px;
@@ -382,6 +395,10 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
+
+    &--page {
+      margin-bottom: 20px;
+    }
   }
 
   &-form {
