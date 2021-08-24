@@ -1,0 +1,5 @@
+@media(max-width: 1440px) {
+  .products .product__item {
+    flex-basis: calc(33.3333% - 30px);
+  }
+}
