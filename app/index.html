@@ -34,7 +34,7 @@
             <a class="header__phone" href="tel:61383766284">+61 3 8376 6284</a>
           </div>
           <div class="header__box">
-            <div class="notification-box">
+            <div class="notification-box header__btn--login-off">
               <a class="notification header__circle active icon-bell-o" href="#">
                 <span>8</span>
               </a>
@@ -62,7 +62,7 @@
                 </a>
               </div>
             </div>
-            <div class="message-box">
+            <div class="message-box header__btn--login-off">
               <a class="message header__circle active icon-envelope-o" href="#">
                 <span>5</span>
               </a>
@@ -95,7 +95,7 @@
             </div>
             <div class="basket-box">
               <a class="basket header__circle active icon-shopping-cart" href="#">
-                <span>8</span>
+                <span class="logout">8</span>
               </a>
               <div class="circle__menu">
                 <a class="circle__item" href="#">
@@ -124,7 +124,7 @@
                 </div>
               </div>
             </div>
-            <div class="user-box">
+            <div class="user-box header__btn--login-off">
               <a classs="user" href="#">
                 <div class="user__inner">
                   <div class="user__images">
@@ -165,15 +165,21 @@
                 </ul>
               </div>
             </div>
-            <a class="header__btn header__btn--login header__btn--login-off" href="#">Login</a>
-            <a class="header__btn header__btn--logout header__btn--login-on" href="#">Logout</a>
-            <a class="header__btn header__btn--register  header__btn--login-off" href="#">Register</a>
+            <a class="header__btn header__btn--login" href="#">Login</a>
+            <a class="header__btn header__btn--logout header__btn--login-off" href="#">Logout</a>
+            <a class="header__btn header__btn--register" href="#">Register</a>
           </div>
+          <div class="header__btn-menu icon-user"></div>
         </div>
       </div>
     </div>
     <div class="header__menu">
       <div class="container">
+        <button class="header__burger" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
@@ -641,7 +647,7 @@
     <div class="footer__top">
       <div class="container">
         <div class="footer__top-inner">
-          <div class="footer__col">
+          <div class="footer__col footer__col--address">
             <h3 class="footer__col-title">About Company</h3>
             <p class="footer__col-text">
               Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna
@@ -713,7 +719,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__col">
+          <div class="footer__col footer__col--social">
             <h3 class="footer__col-title">Follow Us On</h3>
             <ul class="footer__social-list">
               <li class="footer__social-item">

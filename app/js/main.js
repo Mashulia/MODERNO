@@ -13,8 +13,6 @@ $(function () {
     slidesToScroll: 2
   });
 
-  var mixer = mixitup('.products__inner-box');
-
   $(".js-range-slider").ionRangeSlider({
     type: "double",
     min: 0,
@@ -35,7 +33,15 @@ $(function () {
     $('.products__inner-box .product__item').removeClass('list');
     $('.icon-th-large').addClass('active');
     $('.icon-th-list').removeClass('active');
-
   });
 
+  $('.header__burger').on('click', function () {
+    $('.menu').slideToggle('active');
+  });
+
+  $('.header__btn-menu').on('click', function () {
+    $('.header__box').toggleClass('active');
+  });
+
+  var mixer = mixitup('.products__inner-box');
 });

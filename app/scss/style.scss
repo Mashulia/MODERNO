@@ -2,9 +2,6 @@
 @import 'global';
 @import 'fonts';
 
-@import 'new-items';
-@import '_media';
-
 
 // start header
 
@@ -12,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 91px;
+  height: 90px;
 }
 
 .header__text {
@@ -39,6 +36,7 @@
 
   &--login {
     background-color: $green;
+    margin-left: 25px;
 
     &-off {
       display: none;
@@ -60,6 +58,34 @@
   }
 }
 
+.header__burger,
+.header__btn-menu {
+  display: none;
+}
+
+.menu.active {
+  display: block;
+}
+
+.header__btn-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70px;
+  height: 70px;
+  background-color: $bg;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+  }
+}
+
 .header__menu {
   background-color: $bg;
 }
@@ -71,8 +97,6 @@
 }
 
 .menu__item {
-  display: inline-block;
-
   &+.menu__item {
     margin-left: 30px;
   }
@@ -144,8 +168,14 @@
 .basket {
   span {
     background-color: $green;
+
+    &.logout {
+      background-color: $red;
+    }
   }
+
 }
+
 
 .notification-box,
 .message-box {
@@ -969,6 +999,7 @@
 
     &-inner {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
     }
   }
@@ -1093,7 +1124,7 @@
       display: block;
       padding-left: 13px;
       padding-right: 50px;
-      max-width: 100%;
+      width: 100%;
       height: 40px;
       border: none;
       font-size: 14px;
@@ -1108,10 +1139,10 @@
 
     button {
       position: absolute;
-      bottom: 1px;
+      bottom: 0;
       right: 0;
       padding: 0;
-      height: 41px;
+      height: 40px;
       width: 44px;
       background-color: $green;
       border: none;
@@ -1148,3 +1179,7 @@
 }
 
 // end footer
+
+@import 'new-items';
+
+@import 'media';
