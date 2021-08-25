@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>New Items</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500;700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@300;500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -241,7 +241,7 @@
           <a href="#">Home</a>
         </li>
         <li class="breadcrumbs__item">
-          <span href="#">Product Page</span>
+          <span>Product Page</span>
         </li>
       </ul>
     </div>
@@ -251,10 +251,10 @@
     <section class="catalog">
       <div class="container">
         <div class="catalog__inner">
-          <aside class="catalog__filter">
-            <div class="catalog__filter-category">
-              <h2 class="catalog__filter-title">Categories</h2>
-              <ul class="catalog__filter-list">
+          <aside class="catalog__aside aside">
+            <div class="aside__item">
+              <h2 class="aside__title">Categories</h2>
+              <ul class="aside__list">
                 <li>
                   <button class="icon-angle-right" type="button" data-filter=".category-wordpress">WordPress</button>
                   <span>(150)</span>
@@ -277,16 +277,16 @@
                 </li>
               </ul>
             </div>
-            <div class="catalog__filter-range">
-              <h2 class="catalog__filter-title">Price Range</h2>
+            <div class="aside__item aside__item--range">
+              <h2 class="aside__title">Price Range</h2>
               <form action="#">
                 <input type="text" class="js-range-slider" name="my_range" value="" />
-                <button class="catalog__filter-button" type="submit"><span class="icon-search">Submit</span></button>
+                <button class="aside__button" type="submit"><span class="icon-search">Submit</span></button>
               </form>
             </div>
-            <div class="catalog__rating">
-              <h2 class="catalog__filter-title">Top 10 Sellers</h2>
-              <ul class="catalog__rating-list">
+            <div class="aside__item aside__item--rating">
+              <h2 class="aside__title">Top 10 Sellers</h2>
+              <ul class="aside__rating-list">
                 <li class="product__item">
                   <a class="product__item-img" href="#"
                     style="background-image: url(img/content/product-small-19.jpg);"></a>
@@ -348,7 +348,7 @@
                   </div>
                 </li>
               </ul>
-              <a class="catalog__filter-button" href="#">View All</a>
+              <a class="aside__button" href="#">View All</a>
             </div>
           </aside>
           <div class="catalog__right">
@@ -754,9 +754,9 @@
                     </div>
                     <div class="product__item-star">
                       <div class="rate-star"></div>(<span>05</span>)
+                      <div class="product__item-review icon-comment-o">(<span>10</span>)</div>
+                      <div class="product__item-likes icon-heart-o">(<span>20</span>)</div>
                     </div>
-                    <div class="product__item-review icon-comment-o">(<span>10</span>)</div>
-                    <div class="product__item-likes icon-heart-o">(<span>20</span>)</div>
                   </div>
                 </div>
               </div>
