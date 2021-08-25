@@ -27,6 +27,7 @@ function styles() {
       'node_modules/magnific-popup/dist/magnific-popup.css',
       'node_modules/normalize.css/normalize.css',
       'node_modules/ion-rangeslider/css/ion.rangeSlider.css',
+      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
       'app/scss/style.scss'
     ])
     .pipe(scss({
@@ -47,6 +48,7 @@ function scripts() {
       'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
       'node_modules/mixitup/dist/mixitup.js',
       'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
+      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
       'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
