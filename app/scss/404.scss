@@ -1,0 +1,73 @@
+.page-404 {
+  padding-bottom: 150px;
+
+  &__wrapper {
+    background-color: #fff;
+    border: 1px solid $border-color;
+  }
+
+  &__header {
+    padding: 20px 27px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #444;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__inner {
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background-color: $green;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 40px;
+    margin-left: -70px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 300px;
+    line-height: 300px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      margin-left: 20px;
+      width: 150px;
+      height: 293px;
+      background: url("../img/page-404.png") center no-repeat;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 6px;
+  }
+
+  &__text {
+    max-width: 530px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  &__link {
+    padding: 0 30px;
+    height: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    border-radius: 4px;
+  }
+}
