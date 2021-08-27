@@ -1,0 +1,101 @@
+.product__tabs.settings__tabs {
+  display: flex;
+  margin-bottom: 0;
+
+  .tabs {
+    flex-direction: column;
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+    height: 100%;
+
+    .tab {
+      flex: 0 0 auto;
+      font-weight: 500;
+      padding: 15px 15px 15px 50px;
+      text-align: left;
+      font-size: 14px;
+      border-bottom: 1px solid $border-color;
+
+      &+.tab {
+        border-left: none;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &.angle-right::before {
+        left: 24px;
+        color: #444;
+      }
+
+      &.active::before {
+        color: $green;
+      }
+    }
+  }
+
+  .tab__content {
+    flex-grow: 1;
+    height: auto;
+    padding: 0;
+  }
+}
+
+.page-box {
+  &__header {
+    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $border-color;
+  }
+
+  &__title {
+    padding: 18px 34px;
+    font-size: 24px;
+    font-weight: 500;
+    color: $bg;
+  }
+
+  &__content {
+    padding: 37px 37px 80px;
+
+    button {
+      height: 46px;
+      padding: 10px 30px;
+      margin-left: 293px;
+      font-size: 15px;
+      color: #fff;
+      background-color: $green;
+      border: none;
+      text-align: center;
+    }
+  }
+}
+
+.settings {
+  &__line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  label {
+    width: 100%;
+    max-width: 270px;
+    margin-right: 23px;
+    font-size: 15px;
+    color: #444;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    height: 40px;
+    background-color: #f9f9f9;
+    border: 1px solid $border-color;
+    color: $bg;
+  }
+}

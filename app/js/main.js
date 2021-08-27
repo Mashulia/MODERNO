@@ -43,10 +43,10 @@ $(function () {
     $('.header__box').toggleClass('active');
   });
 
-  $('.product__tabs .tab').on('click', function (evt) {
+  $('.product__tabs .tab, settings__tabs .tab').on('click', function (evt) {
     var id = $(this).attr('data-id');
-    $('.product__tabs').find('.tab__item').removeClass('active-tab').hide();
-    $('.product__tabs .tab').find('.tab').removeClass('active');
+    $('.product__tabs, settings__tabs').find('.tab__item').removeClass('active-tab').hide();
+    $('.product__tabs .tabs, settings__tabs .tabs').find('.tab').removeClass('active');
     $(this).addClass('active');
     $('#' + id).addClass('active-tab').fadeIn();
     return false;
