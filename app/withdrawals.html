@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Withdrawals</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -241,13 +241,101 @@
           <a href="#">Home</a>
         </li>
         <li class="breadcrumbs__item">
-          <span>Product Page</span>
+          <span>Withdrawals</span>
         </li>
       </ul>
     </div>
   </div>
   <main class="inner-page">
-    <h1 class="visually-hidden">New items</h1>
+    <div class="container">
+      <h1 class="visually-hidden">Withdrawals</h1>
+      <section class="withdrawals">
+        <div class="withdrawals__col">
+          <div class="withdrawals__box">
+            <h2 class="withdrawals__title">Withdrawals Earnings</h2>
+            <form action="#">
+              <div class="withdrawals__form-line">
+                <label for="withdrawals-amount">Amount to Withdraw ($2000.00 Maximum)<span>*</span></label>
+                <input type="text" name="withdrawals-amount" id="withdrawals-amount"
+                  placeholder="Enter the amount you want to withdraw...">
+              </div>
+              <div class="withdrawals__form-line">
+                <label for="withdrawals-method">Choose your Withdraw Method<span>*</span></label>
+                <select name="withdrawals-method" id="withdrawals-method">
+                  <option value="Select Your Card">Select Your Card</option>
+                  <option value="Select Your Card">Select Your Card</option>
+                  <option value="Select Your Card">Select Your Card</option>
+                </select>
+              </div>
+              <div class="withdrawals__form-line">
+                <label for="withdrawals-account-name">Your Account Name<span>*</span></label>
+                <select name="withdrawals-account-name" id="withdrawals-account-name">
+                  <option value="Select Your Card">Select Your Card</option>
+                  <option value="Select Your Card">Select Your Card</option>
+                  <option value="Select Your Card">Select Your Card</option>
+                </select>
+              </div>
+              <div class="withdrawals__form-line">
+                <label for="withdrawals-password">Confirm Your Password<span>*</span></label>
+                <input type="text" name="withdrawals-password" id="withdrawals-password" placeholder="Select Your Card">
+              </div>
+              <button type="submit">Request Withdrawal</button>
+            </form>
+          </div>
+        </div>
+        <div class="withdrawals__col">
+          <div class="withdrawals__box">
+            <h2 class="withdrawals__title">Withdrawal History</h2>
+            <div class="withdrawals__content">
+              <div class="withdrawals__content-items">
+                <div class="withdrawals__content-item">
+                  <date datetime="2016-12-26">Dec 26th, 2016</date>
+                  <a href="mailto:Psdboss@paypal.com">Psdboss@paypal.com</a>
+                  <span class="withdrawals__price">$200</span>
+                  <span class="withdrawals__status">Pending</span>
+                </div>
+                <div class="withdrawals__content-item withdrawals__content-item--paid">
+                  <date datetime="2016-12-26">Dec 26th, 2016</date>
+                  <a href="mailto:Psdboss@paypal.com">Psdboss@paypal.com</a>
+                  <span class="withdrawals__price">$100</span>
+                  <span class="withdrawals__status withdrawals__status--paid">Paid</span>
+                </div>
+                <div class="withdrawals__content-item withdrawals__content-item--paid">
+                  <date datetime="2016-12-26">Dec 26th, 2016</date>
+                  <a href="mailto:Psdboss@paypal.com">Psdboss@paypal.com</a>
+                  <span class="withdrawals__price">$200</span>
+                  <span class="withdrawals__status withdrawals__status--paid">Paid</span>
+                </div>
+                <div class="withdrawals__content-item withdrawals__content-item--paid">
+                  <date datetime="2016-12-26">Dec 26th, 2016</date>
+                  <a href="mailto:Psdboss@paypal.com">Psdboss@paypal.com</a>
+                  <span class="withdrawals__price">$100</span>
+                  <span class="withdrawals__status withdrawals__status--paid">Paid</span>
+                </div>
+                <div class="withdrawals__content-item withdrawals__content-item--paid">
+                  <date datetime="2016-12-26">Dec 26th, 2016</date>
+                  <a href="mailto:Psdboss@paypal.com">Psdboss@paypal.com</a>
+                  <span class="withdrawals__price">$200</span>
+                  <span class="withdrawals__status withdrawals__status--paid">Paid</span>
+                </div>
+                <div class="withdrawals__content-item withdrawals__content-item--paid">
+                  <date datetime="2016-12-26">Dec 26th, 2016</date>
+                  <a href="mailto:Psdboss@paypal.com">Psdboss@paypal.com</a>
+                  <span class="withdrawals__price">$100</span>
+                  <span class="withdrawals__status withdrawals__status--paid">Paid</span>
+                </div>
+                <div class="withdrawals__content-item withdrawals__content-item--paid">
+                  <date datetime="2016-12-26">Dec 26th, 2016</date>
+                  <a href="mailto:Psdboss@paypal.com">Psdboss@paypal.com</a>
+                  <span class="withdrawals__price">$200</span>
+                  <span class="withdrawals__status withdrawals__status--paid">Paid</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer__top">
