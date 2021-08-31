@@ -1,0 +1,208 @@
+.profile {
+  &__inner {
+    display: flex;
+    padding-bottom: 30px;
+  }
+
+  &__status {
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 9px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+
+    &--on::before {
+      background-color: $green;
+    }
+
+    &--off::before {
+      background-color: $red;
+    }
+  }
+
+  &-aside {
+    margin-right: 30px;
+
+    & .footer__social-list {
+      margin: 26px 0;
+    }
+
+    &__link {
+      width: 100%;
+      padding: 0 10px;
+      height: 55px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 55px;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+
+      &--message {
+        position: relative;
+        margin-bottom: 16px;
+        background-color: $color-text;
+
+        &::before {
+          position: absolute;
+          content: "\f003";
+          left: 40px;
+          font-size: 16px;
+          font-weight: 400;
+          font-family: "icomoon";
+          color: #fff;
+        }
+      }
+
+      &--following {
+        background-color: $green;
+      }
+    }
+  }
+
+  &-content {
+    width: 100%;
+
+    &__banner {
+      padding: 20px;
+      margin-bottom: 30px;
+      border: 1px solid $border-color;
+      background-color: #fff;
+
+      &-images {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 330px;
+      }
+    }
+
+    &__items {
+      display: flex;
+      border: 1px solid $border-color;
+    }
+
+    &__item {
+      flex: 0 0 25%;
+      padding: 13px 10px 12px;
+      font-size: 14px;
+      background-color: #fff;
+      text-align: center;
+
+      &+.profile-content__item {
+        border-left: 1px solid $border-color;
+      }
+
+      &-title {
+        font-weight: 500;
+        color: $bg;
+      }
+
+      &-content {
+        color: $dark-grey;
+
+        &--sales {
+          color: #000;
+        }
+
+        span {
+          color: $bg;
+        }
+      }
+    }
+  }
+}
+
+.profile-settings {
+  padding-bottom: 115px;
+
+  .product__tabs.settings__tabs {
+    .tabs span {
+      position: relative;
+      font-weight: 500;
+      font-family: "Roboto", sans-serif !important;
+
+      &.active::before {
+        background-color: $green;
+      }
+
+      &::before {
+        left: 24px;
+        content: "";
+        position: absolute;
+        font-family: "icomoon";
+        font-size: 14px;
+        color: #d0d0d0;
+      }
+    }
+  }
+
+  & .tab-icon {
+    padding-left: 20px;
+  }
+}
+
+.personal-box {
+  padding: 30px 47px 50px 40px;
+  border-top: 1px solid $border-color;
+
+  &__title {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    color: $bg;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    font-size: 15px;
+    color: $dark-grey;
+  }
+
+  &__item {
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: $bg;
+    }
+
+    &+.personal-box__item {
+      margin-top: 15px;
+    }
+
+    &-name {
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    &-number {
+      font-weight: 700;
+    }
+
+    &-line {
+      position: relative;
+      border-radius: 4px;
+      background-color: #f4f4f4;
+      width: 100%;
+      height: 15px;
+
+      span {
+        display: block;
+        border-radius: 4px;
+        height: 15px;
+        background: url("../img/Layer1.png") -15px center repeat;
+      }
+    }
+  }
+}

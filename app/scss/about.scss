@@ -1,0 +1,22 @@
+.about__inner {
+  padding: 0 50px;
+  background-color: #fff;
+}
+
+.about__box {
+  font-family: 'Roboto', sans-serif;
+
+  h3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #444;
+  }
+
+  p {
+    margin-bottom: 40px;
+    color: $dark-grey;
+    font-size: 15px;
+  }
+}

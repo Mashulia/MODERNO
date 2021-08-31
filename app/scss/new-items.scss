@@ -1,0 +1,427 @@
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+.inner-page {
+  background-color: $grey;
+}
+
+// start breadcrumbs
+.breadcrumbs {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $grey;
+}
+
+.breadcrumbs__list {
+  display: flex;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  font-size: 15px;
+  color: $color-text-lighter;
+
+  &+.breadcrumbs__item {
+    padding-left: 12px;
+    margin-left: 8px;
+  }
+
+  &+.breadcrumbs__item::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6px;
+    height: 1px;
+    transform: translateY(-50%);
+    background-color: $green;
+  }
+
+  &:last-of-type::before {
+    display: none;
+  }
+
+  span {
+    color: $bg;
+  }
+}
+
+// end breadcrumbs
+// start sort
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 25px;
+  margin-bottom: 30px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid $border-color;
+
+  &__new {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 14px;
+    color: $dark-grey;
+
+    &::before {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      font-size: 14px;
+      color: #455a64;
+    }
+  }
+
+  button {
+    position: relative;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    &.icon-unsorted::before {
+      font-size: 18px;
+      color: $dark-grey;
+    }
+
+    &.icon-sort-amount-desc {
+      top: 2px;
+      width: 18px;
+      height: 18px;
+    }
+
+    &.icon-th-large,
+    &.icon-th-list {
+      font-size: 16px;
+      color: #90a4ae;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45px;
+  }
+
+  &__button {
+    &--new {
+      width: 12px;
+      height: 20px;
+    }
+
+    &--table,
+    &--list {
+      width: 15px;
+      height: 15px;
+    }
+
+    &.active {
+      &::before {
+        color: $green;
+      }
+    }
+  }
+}
+
+// end sort
+
+// start range
+.irs--flat .irs-line {
+  height: 5px;
+  background-color: #f2f5f8;
+  border-radius: 2px;
+}
+
+.irs--flat .irs-handle {
+  position: relative;
+  top: -10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 5px solid $green;
+  cursor: pointer;
+
+  &.to {
+    top: -26px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
+
+.irs--flat .irs-bar {
+  top: 25px;
+  height: 5px;
+  background-color: #37474f;
+}
+
+.irs--flat .irs-handle>i {
+  display: none;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to {
+  position: relative;
+  top: 35px;
+  display: inline-block;
+  color: #78909c;
+  font-size: 15px;
+  padding: 0;
+  padding-left: 8px;
+  background-color: transparent;
+  border-radius: 0;
+
+  &::before {
+    display: none;
+  }
+}
+
+.irs--flat .irs-to {
+  transform: translateX(-30px);
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none;
+}
+
+// end range
+
+// start catalog
+.catalog {
+  padding-bottom: 110px;
+
+  &__inner {
+    display: flex;
+  }
+}
+
+.catalog__aside {
+  margin-right: 30px;
+}
+
+.aside {
+  width: 100%;
+  max-width: 270px;
+
+  &__item {
+    padding: 25px 30px 40px;
+    font-size: 15px;
+    background-color: #fff;
+    border: 1px solid $border-color;
+
+    &+.aside__item {
+      margin-top: 30px;
+    }
+
+    &--range {
+      padding-bottom: 30px;
+    }
+
+    &--product-price {
+      button {
+        padding: 10px 25px;
+        height: 48px;
+        width: 100%;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 1px 2px 0px #455a64bf;
+
+        &+button {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    &--sales {
+      padding: 20px;
+      padding-left: 70px;
+      font-weight: 300;
+      font-size: 16px;
+      color: $dark-grey;
+
+      span {
+        position: relative;
+        margin-right: 10px;
+        font-weight: 700;
+        font-size: 20px;
+        color: $bg;
+
+        &::before {
+          position: absolute;
+          left: -40px;
+          content: "\f07a";
+          font-family: "icomoon";
+          font-weight: 400;
+          font-size: 20px;
+          color: #a6b5bb;
+        }
+      }
+    }
+  }
+
+  &__title {
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    color: $bg;
+    border-bottom: 1px solid #dde3e8;
+  }
+
+  &__list {
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      button {
+        position: relative;
+        padding: 0;
+        padding-left: 20px;
+        font-family: "Roboto", sans-serif !important;
+        line-height: 1.5;
+        color: $bg;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          font-family: "icomoon";
+          color: $green;
+          transform: translateY(-50%);
+        }
+      }
+
+      span {
+        color: #90a4ae;
+      }
+    }
+  }
+
+  &__button {
+    padding: 16px;
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    background-color: $green;
+    cursor: pointer;
+
+    .aside__item--rating & {
+      margin-top: 20px;
+      padding: 12px 16px;
+    }
+
+    span {
+      position: relative;
+      padding: 0 25px;
+      font-family: "Roboto", sans-serif !important;
+
+      &::before {
+        position: absolute;
+        left: 0;
+        font-family: "icomoon";
+      }
+    }
+  }
+
+  &--rating {
+    padding: 25px 30px 30px;
+    font-size: 15px;
+    background-color: #fff;
+    border: 1px solid $border-color;
+  }
+
+
+  &__right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.catalog__right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+// end catalog
+
+// start pagination
+.pagination {
+  margin-top: auto;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &+.pagination__item {
+      margin-left: 8px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 8px 15px;
+      font-size: 16px;
+      color: $bg;
+      background-color: #fff;
+      transition: all 0.3s linear;
+      box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+
+
+      &.active,
+      &:hover {
+        color: #fff;
+        background-color: rgb(231, 76, 60);
+      }
+    }
+  }
+}
+
+// end pagination

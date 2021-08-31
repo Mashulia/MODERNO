@@ -1,0 +1,138 @@
+.contact {
+  &__inner {
+    padding: 30px 40px 15px;
+  }
+
+  &__header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  &__map {
+    margin-bottom: 50px;
+
+    iframe {
+      width: 100%;
+      height: 415px;
+    }
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__info {
+    max-width: 330px;
+    width: 100%;
+    margin-right: 30px;
+
+    &-item {
+      padding-left: 40px;
+
+      &+.contact__info-item {
+        margin-top: 30px;
+      }
+    }
+
+    &-title {
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+
+      font-family: "Roboto", sans-serif !important;
+      font-weight: 500;
+      font-size: 20px;
+      color: $bg;
+
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 40px;
+        height: 4px;
+        background-color: $green;
+      }
+
+      &::before {
+        position: absolute;
+        font-family: "icomoon";
+        font-weight: 400;
+        font-size: 24px;
+        color: $green;
+        left: -40px;
+        top: 0;
+      }
+    }
+
+    &-content {
+      font-size: 14px;
+      color: $dark-grey;
+
+      &--address {
+        width: 100%;
+        max-width: 225px;
+        font-style: normal;
+      }
+    }
+  }
+
+  &__form {
+    width: 100%;
+
+    &-title {
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 24px;
+      color: #333;
+    }
+
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 27px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px 17px;
+      height: 43px;
+      font-size: 15px;
+      line-height: 15px;
+      color: $bg;
+      background-color: #f1f4f5;
+      border: none;
+
+      &::placeholder {
+        font-size: 15px;
+        color: #7a7a7a;
+      }
+    }
+
+    input {
+      flex: 0 0 48%;
+    }
+
+    textarea {
+      height: 193px;
+      margin-bottom: 23px;
+      resize: none;
+    }
+
+    button {
+      display: inline-block;
+      height: 54px;
+      padding: 0 37px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 54px;
+      text-align: center;
+      color: #fff;
+      background-color: $green;
+      border: none;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.withdrawals {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 145px;
+
+  &__col {
+    flex: 0 0 48%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid $border-color;
+  }
+
+  &__title {
+    padding: 18px 34px;
+    font-size: 24px;
+    font-weight: 500;
+    color: $bg;
+    border-bottom: 1px solid $border-color;
+  }
+
+  form {
+    padding: 0 40px 50px 37px;
+  }
+
+  label {
+    display: block;
+
+    margin: 20px 0;
+    font-size: 16px;
+    color: $bg;
+
+    span {
+      color: $green;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 0 18px;
+    height: 42px;
+    background-color: #f9f9f9;
+    border: 1px solid $border-color;
+    color: $bg;
+
+    &::placeholder {
+      font-size: 15px;
+      color: $dark-grey;
+    }
+  }
+
+  button {
+    display: inline-block;
+    height: 52px;
+    padding: 0 30px;
+    margin-top: 40px;
+    margin-right: auto;
+    font-size: 15px;
+    line-height: 52px;
+    color: #fff;
+    background-color: $green;
+    border: none;
+    text-align: center;
+  }
+
+  &__content {
+    padding: 34px 40px 34px 37px;
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 42px;
+      padding: 0 20px;
+      font-weight: 500;
+      font-size: 13px;
+      color: #444;
+
+      &:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
+
+      &--paid {
+        padding-right: 42px;
+      }
+
+    }
+
+  }
+
+  &__status {
+    &--paid {
+      color: $green;
+    }
+  }
+}
