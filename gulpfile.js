@@ -10,7 +10,13 @@ const {
   browserSync = require('browser-sync').create(),
   autoprefixer = require('gulp-autoprefixer'),
   uglify = require('gulp-uglify-es').default,
-  del = require('del');
+  del = require('del'),
+  ghpages = require('gh-pages');
+
+ghpages.publish('dist', {
+  branch: 'master',
+  repo: 'https://github.com/Mashulia/MODERNO'
+}, callback);
 
 
 function browsersync() {
