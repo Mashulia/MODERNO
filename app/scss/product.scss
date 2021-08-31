@@ -207,7 +207,6 @@
   position: relative;
 
   &__content {
-    height: 263px;
     padding: 30px;
     background-color: #fff;
     border: 1px solid $border-color;
@@ -307,6 +306,24 @@
       }
     }
   }
+
+  .profile-content__item {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 10px 12px;
+    font-size: 14px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  .jq-selectbox__select {
+    padding: 0 34px 0 10px;
+  }
 }
 
 .author-box {
@@ -389,6 +406,7 @@
     }
   }
 }
+
 
 .information-line {
   font-size: 14px;

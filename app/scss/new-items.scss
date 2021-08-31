@@ -316,6 +316,7 @@
         position: relative;
         padding: 0;
         padding-left: 20px;
+        font-family: "Roboto", sans-serif !important;
         line-height: 1.5;
         color: $bg;
         border: none;
@@ -326,6 +327,7 @@
           position: absolute;
           top: 50%;
           left: 0;
+          font-family: "icomoon";
           color: $green;
           transform: translateY(-50%);
         }
@@ -357,10 +359,12 @@
     span {
       position: relative;
       padding: 0 25px;
+      font-family: "Roboto", sans-serif !important;
 
       &::before {
         position: absolute;
         left: 0;
+        font-family: "icomoon";
       }
     }
   }
