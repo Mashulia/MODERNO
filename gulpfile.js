@@ -13,12 +13,6 @@ const {
   del = require('del'),
   ghpages = require('gh-pages');
 
-ghpages.publish('dist', {
-  branch: 'master',
-  repo: 'https://github.com/Mashulia/MODERNO'
-}, callback);
-
-
 function browsersync() {
   browserSync.init({
     server: {
@@ -88,6 +82,11 @@ function watching() {
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
   watch(['app/*.html']).on('change', browserSync.reload);
 }
+
+
+module.exports = function deploy() {
+  return ghpages.publish('build', function (err) {});
+};
 
 exports.styles = styles;
 exports.watching = watching;
